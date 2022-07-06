@@ -4,19 +4,26 @@ package com.getarrays.employeemanager.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
+
+//We are using Serializable because this helps transfer java class to different streams such as Json , database etc..
+//We need to map this class to a JPA repository so we are using @Entity
 @Entity
 public class Employee implements Serializable {
 
+    //Since Id is a primaryKey
     @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
-    @Column(nullable = false, updatable = false)
+    @GeneratedValue (strategy = GenerationType.AUTO) //We don't need to enter the value it will be gerneated automatically
+    @Column(nullable = false, updatable = false) //And Id column cannot be a null or updatable
+    
+    //This class contains all the required attributes
+    //We have stters and getters for these attributes along with constructor and toString.
     private Long id;
     private String name;
     private String email;
     private String jobTitle;
     private String phone;
     private String imageURL;
-    @Column(nullable = false,updatable = false)
+    @Column(nullable = false,updatable = false) //similar as Id
     private String employeeCode;
 
     public Employee(String name, String email, String jobTitle, String phone, String imageURL,
