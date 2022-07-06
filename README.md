@@ -10,3 +10,4 @@ Backend - Spring,
 Front end - angular, javascript,typescript, Html , Css
 Database - MySql and frameworks like Postman to perform post and get operations.
 HTTPclient to make requests
+Frameworks -> IntellIJ for backend and Node.js , angular cli for Frontend and Postman for Database
