@@ -29,7 +29,6 @@ export class EmployeeService {
     return this.http.put<Employee>(`${this.apiServerUrl}/employee/update`, employee);
   }
 
-  //For the purpose of deleting there isn't any in built function so we create a method for it
   // Delete operation is done using 'id' which is of type 'number' and it doesn't return anything just a httpstatus, so 'void'
   public deleteEmployee(employeeId: number): Observable<void> {
     return this.http.delete<void>(`${this.apiServerUrl}/employee/delete/${employeeId}`);
