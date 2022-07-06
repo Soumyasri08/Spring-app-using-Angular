@@ -1,4 +1,5 @@
 //The operations which stated here mirrors the operations in backend so that we can use all those function in our components.
+// The employee.service.ts can be created using command i.e., " ng generate service employee"
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -10,8 +11,12 @@ import { environment } from 'src/environments/environment';
 export class EmployeeService {
   private apiServerUrl = environment.apiBaseUrl; //passing the baseurl from environment
 
+  //We are creating a function which can reach to backend to perform the operations
+  // to do this we need to make requests, so in angular to make those requests we use HttpClient which is a built-in function
   constructor(private http: HttpClient){}
 
+  
+  
   //Here the return type is array since we are requesting info of all the employees.
   // We are using get operation
   public getEmployees(): Observable<Employee[]> {
