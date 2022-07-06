@@ -10,16 +10,23 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  
+  //holds the info from backend
   public employees: Employee[];
   public editEmployee: Employee;
   public deleteEmployee: Employee;
 
+  //Having access to the service by injecting this constructor
   constructor(private employeeService: EmployeeService){}
-
+  
+  //whenever we intiallise employees component its gonna access the getemployees function, so to perform the intialization
+ // we are using the following piece of code.
   ngOnInit() {
     this.getEmployees();
   }
 
+  // we are using subscribe to notify whenever we recieve info from the backend
+  // This method holds the response
   public getEmployees(): void {
     this.employeeService.getEmployees().subscribe(
       (response: Employee[]) => {
@@ -32,6 +39,7 @@ export class AppComponent implements OnInit {
     );
   }
 
+ 
   public onAddEmloyee(addForm: NgForm): void {
     document.getElementById('add-employee-form').click();
     this.employeeService.addEmployee(addForm.value).subscribe(
