@@ -9,3 +9,4 @@ we have used technologies like
 Backend - Spring, 
 Front end - angular, javascript,typescript, Html , Css
 Database - MySql and frameworks like Postman to perform post and get operations.
+HTTPclient to make requests
