@@ -1,27 +1,18 @@
 # Employeemanagerapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+We have installed Node.js and in cmd to install angular cli run ' npm install -g @angular cli'
 
-## Development server
+After installation of angular cli using npm (node package manager)
+To create, build, and serve a new, basic Angular project on a development server, go to the parent directory of your new workspace and use the following commands
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ng new employeemanagerapp
+cd employeemanagerapp
+ng serve
 
-## Code scaffolding
+After running this command you will receive a link, run it on your browser and you can see your new application running.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Now whatever changes you make in your frontend code will reflect on the browser.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Note : Since the port of the backend(localhost:8080) and frontend (localhost:4200) are different we need to write a CORS configuration code
+in the backend.(Using this config backend will allow a request from frontend even though the port is different)
