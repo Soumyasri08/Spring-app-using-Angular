@@ -11,7 +11,7 @@ $ git clone https://github.com/Soumyasri08/Spring-app-using-Angular
 5. Run frontend code using visual studio code
 6. Now the application will be running on localhost:4200
 
-1) List of all Employees
+1)List of all Employees
 -----------------------------
 Details of all the employees will be displayed
 
