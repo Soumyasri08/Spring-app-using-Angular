@@ -9,10 +9,12 @@ import { HttpClientModule } from '@angular/common/http';import { FormsModule } f
   declarations: [
     AppComponent
   ],
+  //importing all the required modules
   imports: [
     BrowserModule,
     HttpClientModule, FormsModule
   ],
+  //we are letting know the app about employeeservice by setting it as provider or root
   providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
