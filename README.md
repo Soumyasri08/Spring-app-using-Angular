@@ -13,6 +13,7 @@ $ git clone https://github.com/Soumyasri08/Spring-app-using-Angular
 
 1) List of all Employees
 -----------------------------
+Details of all the employees will be displayed
 
 ![Screenshot (87)](https://user-images.githubusercontent.com/70061578/177577314-11fa13b6-3b98-426a-8374-b3449573f902.png)
 
