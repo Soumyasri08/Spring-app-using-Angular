@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   public editEmployee: Employee;
   public deleteEmployee: Employee;
 
-  //Having access to the service by injecting this constructor
+  //Having access to the service by injecting this constructor 
   constructor(private employeeService: EmployeeService){}
   
   //whenever we intiallise employees component its gonna access the getemployees function, so to perform the intialization
@@ -79,6 +79,8 @@ export class AppComponent implements OnInit {
     );
   }
 
+  // we are trying to search employee based on a key (which can be any of the given attributes) by passing a condition that the index is not null or -1
+  //Because if index == -1 then the record doesn't exsists
   public searchEmployees(key: string): void {
     console.log(key);
     const results: Employee[] = [];
@@ -95,6 +97,9 @@ export class AppComponent implements OnInit {
       this.getEmployees();
     }
   }
+  
+  //we are creating a method to determine what operation the user is trying to do
+  // depending on the mode (or operation user wants to perform) the below method calls the above functions and prforms operations like add,update and delete
 
   public onOpenModal(employee: Employee, mode: string): void {
     const container = document.getElementById('main-container');
@@ -113,6 +118,7 @@ export class AppComponent implements OnInit {
       this.deleteEmployee = employee;
       button.setAttribute('data-target', '#deleteEmployeeModal');
     }
+    // we are adding or editing or deleting the component to the container or you can say to the page by clicking the button.
     container.appendChild(button);
     button.click();
   }
