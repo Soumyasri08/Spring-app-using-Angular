@@ -1,5 +1,18 @@
 # Spring-app-using-Angular
 
+
+Installation
+--------------------
+1. Install MySQl5 cli for creating database
+2. go to Jetbrain.com and Install Intellij for running backend code
+3. Install Postman to post and put the details of employee into database
+4. Instll visual studio code for running frontend application
+5. To run frontend we require npm packages so for those packages install node.js
+6. using node.js cli enter a command " npm install -g @angular/cli" to install angular 
+7. enter ng new employeemanagerapp
+8. enter cd employeemanager app
+
+
 Running Locally
 -----------------
 $ git clone https://github.com/Soumyasri08/Spring-app-using-Angular
