@@ -4,7 +4,7 @@
 Installation
 --------------------
 1. Install MySQl5 cli for creating database
-2. go to Jetbrain.com and Install Intellij for running backend code
+2. Go to Jetbrains.com and Install Intellij for running backend code
 3. Install Postman to post and put the details of employee into database
 4. Instll visual studio code for running frontend application
 5. To run frontend we require npm packages so for those packages install node.js
